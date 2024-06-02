@@ -1,46 +1,29 @@
-# Getting Started with Create React App
+# Выпускная квалификационная работа
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Онлайн-сервис создания фотогалерей с применением нейросетевых технологий распознавания лиц
 
-## Available Scripts
+**Студент**: А. А. Гаврилов
 
-In the project directory, you can run:
+**Группа**: М8О-406Б-20
 
-### `npm start`
+**Научный руководитель**: Л. Н. Чернышов
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Цель и задачи работы
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**Цель** - обеспечить пользователей средством для работы с фотогалереями с возможностью идентификации отдельных личностей на фотографиях.
 
-### `npm test`
+**Задачи**:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- реализовать работу технологии идентификации лиц;
+- разработать архитектуру серверного и клиентского приложений;
+- реализовать систему авторизации и аутентификации;
+- реализовать систему фотогалерей.
 
-### `npm run build`
+## Задачи на разработку
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-	выбрать, добавить и протестировать нейронную сеть для идентификации лиц, продумать способ хранения векторов, которые запоминаются в процессе запоминания лица;
+-	продумать схему БД, в которой будут храниться все пользователи, их email-коды и сессии, каким образом будет происходить взаимодействие сервера с клиентом. Реализовать регистрацию/авторизацию и аутентификацию пользователя, сделать их двухфакторными, для этого подключить почтовый клиент, чтобы отправлять на почту пользователя код;
+-	продумать схему БД, в которой будут храниться галереи, информация о них, каким образом к ним будут привязаны изображения, а также каким образом будет храниться список имён личностей, которые были сохранены пользователем или идентифицированы нейронной сетью;
+-	реализовать систему, в которой будет корректное взаимодействие всех составных частей, описанных выше, также продумать каким образом пользователь будет взаимодействовать с этой системой и реализовать это взаимодействие.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+**В текущем репозитории представлен код клиентской части приложения.**
